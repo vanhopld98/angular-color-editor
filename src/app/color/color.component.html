@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      Color Editor
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <label class="form-label">Red</label>
+        <input type="range" class="form-range" min="0" max="255" [(ngModel)]="red">
+      </li>
+      <li class="list-group-item">
+        <label class="form-label">Green</label>
+        <input type="range" class="form-range" min="0" max="255" [(ngModel)]="green">
+      </li>
+      <li class="list-group-item">
+        <label class="form-label">Blue</label>
+        <input type="range" class="form-range" min="0" max="255" [(ngModel)]="blue">
+      </li>
+      <li class="list-group-item">
+        <p [style.color]="changeColor()" style="font-size: 30px">
+        This is a paragraph.
+      </p>
+      </li>
+    </ul>
+  </div>
+</div>
